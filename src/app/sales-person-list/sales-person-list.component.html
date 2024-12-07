@@ -1,0 +1,24 @@
+<p>{{salesPersonList[0].first_name}} {{salesPersonList[0].last_name}}</p>
+
+<table class="table table-hover" border="1">
+    <thead class="table-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Met Quota?</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let salesPerson of salesPersonList">
+            <td>{{salesPerson.first_name}}</td>
+            <td>{{salesPerson.last_name}}</td>
+            <td>{{salesPerson.email}}</td>
+            <td>{{salesPerson.volume | currency:'USD'}}</td>
+            <td>{{salesPerson.volume >4000 ?"Yes":"No"}}</td>
+        </tr>
+    </tbody>
+
+</table>
