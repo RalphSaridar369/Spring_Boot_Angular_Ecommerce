@@ -6,7 +6,7 @@ import { Product } from '../../common/product';
 @Component({
   selector: 'app-product-list',
   imports: [CommonModule],
-  templateUrl: './product-list.component.html',
+  templateUrl: './product-list-grid.component.html',
   styleUrl: './product-list.component.css',
 })
 export class ProductListComponent implements OnInit {
